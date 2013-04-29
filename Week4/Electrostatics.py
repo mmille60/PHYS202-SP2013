@@ -1,7 +1,7 @@
 import numpy as np
 
 k=8.8987*(10**9)
-def pointPotential(x,y,q,posx,posy):
+def pointPotential(x,y,q,posy,posx):
     """Vxy is the eletra potential it takes x,y,q,posx,posy and returns the potential"""
     Vxy=((k*q)/((x-posx)**2+(y-posy)**2)**.5)
     return Vxy
