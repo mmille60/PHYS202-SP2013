@@ -17,9 +17,3 @@ def dipolePotentialangle(x,y,q,d,Theta):
     """returns dispole pontial betweentwo particles seperated by distance d and angle theta with axis"""
     Vxy= pointPotential(x,y,q,(d/2.*cos(Theta)),(d/2.*sin(Theta)))+pointPotential(x,y,-q,-(d/2.*cos(Theta)),(-d/2.*sin(Theta)))
     return Vxy
-k=8.987*10**9
-def pointFeild(x,y,q,Xq,Yq):
-        """put in x,y,q,Xq,Yq returns a tuple of the electric field componets Ex , Ey"""
-        Ex=(k*q)*(x-Xq)/((x-Xq)**2+(y-Yq)**2)**.5
-        Ey=(k*q)*(y-Yq)/((x-Xq)**2+(y-Yq)**2)**.5
-        return (Ex,Ey)
