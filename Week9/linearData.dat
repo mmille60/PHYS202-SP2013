@@ -1,4 +1,4 @@
-Time(s) Position(m) Uncertainty of Position(m)
+#Time(s) Position(m) Uncertainty of Position(m)
 1.000	7.750	0.020
 2.000	7.330	0.030
 3.000	6.890	0.030
